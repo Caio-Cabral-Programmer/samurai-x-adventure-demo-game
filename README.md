@@ -146,7 +146,7 @@ pip install pyinstaller
 **2. Build the executable:**
 
 ```bash
-pyinstaller --onefile --noconsole --add-data "assets;assets" --name "SamuraiXAdventure" main.py
+pyinstaller --onefile --noconsole --add-data "assets;assets" --name "SamuraiX" main.py
 ```
 
 | Flag | Purpose |
@@ -154,11 +154,11 @@ pyinstaller --onefile --noconsole --add-data "assets;assets" --name "SamuraiXAdv
 | `--onefile` | Packages everything into a single `.exe` file |
 | `--noconsole` | Hides the console window (game-only window) |
 | `--add-data "assets;assets"` | Includes the `assets/` folder with images and sounds |
-| `--name "SamuraiXAdventure"` | Sets the name of the output executable |
+| `--name "SamuraiX"` | Sets the name of the output executable |
 
 > **Note for macOS/Linux:** Replace the semicolon `;` with a colon `:` in `--add-data`:
 > ```bash
-> pyinstaller --onefile --noconsole --add-data "assets:assets" --name "SamuraiXAdventure" main.py
+> pyinstaller --onefile --noconsole --add-data "assets:assets" --name "SamuraiX" main.py
 > ```
 
 **3. Find the executable:**
@@ -167,12 +167,12 @@ The built file will be in the `dist/` folder:
 
 ```
 dist/
-  SamuraiXAdventure.exe
+  SamuraiX.exe
 ```
 
 **4. Distribute:**
 
-Send the `SamuraiXAdventure.exe` file to anyone — they do not need Python or Pygame installed. The SQLite database (`samurai_scores.db`) will be created automatically on the first run.
+Send the `SamuraiX.exe` file to anyone — they do not need Python or Pygame installed. The SQLite database (`samurai_scores.db`) will be created automatically on the first run.
 
 > **Important:** If the game uses `pathlib.Path` or relative paths for assets, PyInstaller may require adjusting the base path at runtime. If you encounter "file not found" errors when running the `.exe`, you may need to update `config.py` to detect the PyInstaller bundle path:
 >
