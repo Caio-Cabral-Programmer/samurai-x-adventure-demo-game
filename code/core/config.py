@@ -1,0 +1,90 @@
+"""Game configuration constants and paths."""
+
+from pathlib import Path
+
+# Paths
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+ASSETS_DIR = ROOT_DIR / "assets"
+DB_PATH = ROOT_DIR / "samurai_scores.db"
+
+# Screen
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 300
+FPS = 60
+GAME_TITLE = "Samurai X Adventure"
+
+# Colors
+SKY_BLUE = (36, 159, 222)
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GOLD = (255, 215, 0)
+GRAY = (170, 170, 170)
+DARK_RED = (139, 0, 0)
+
+# Ground
+GROUND_Y = 190
+
+# Player
+PLAYER_X = 60
+PLAYER_BASE_Y = 262
+PLAYER_RUN_SIZE = (52, 58)
+PLAYER_DUCK_SIZE = (70, 38)
+PLAYER_JUMP_HEIGHT = 17
+PLAYER_GRAVITY = 1
+
+# Obstacles
+OBSTACLE_BOTTOM_Y = 265
+OBSTACLE_SCALE = 0.65
+OBSTACLE_COUNT = 14
+
+# Birds
+BIRD_Y_OPTIONS = [165, 200]
+BIRD_SIZE = (52, 28)
+BIRD_FRAME_COUNT = 6
+
+# Clouds
+CLOUD_Y_RANGE = (20, 100)
+CLOUD_SIZE = (60, 18)
+CLOUD_COUNT = 3
+CLOUD_SPAWN_INTERVAL = 150
+
+# Trees
+TREE_COUNT = 6
+TREE_BASE_Y = 210
+TREE_SPAWN_INTERVAL = 200
+
+# Spawning
+ENEMY_SPAWN_INTERVAL = 100
+INITIAL_SPEED = 5
+SPEED_INCREMENT = 0.1
+SPEED_INCREASE_INTERVAL = 100
+ENEMY_INTERVAL_DECREASE = 0.5
+MIN_ENEMY_INTERVAL = 30
+
+# Scoring
+OBSTACLE_SCORE = 10
+BIRD_SCORE = 20
+CHECKPOINT_INTERVAL = 100
+
+# Animation frame counts
+PLAYER_RUN_FRAME_COUNT = 8
+PLAYER_DUCK_FRAME_COUNT = 2
+PLAYER_DEAD_FRAME_COUNT = 3
+PLAYER_JUMP_FRAME_COUNT = 12
+
+# Animation speeds (game frames per sprite frame change)
+RUN_ANIM_SPEED = 4
+DUCK_ANIM_SPEED = 6
+DEAD_ANIM_SPEED = 8
+JUMP_ANIM_SPEED = 3
+
+# Audio
+MENU_MUSIC_VOLUME = 0.5
+GAME_MUSIC_VOLUME = 0.15
+
+# Parallax speed factors (multiplied by game speed)
+CLOUD_SPEED_FACTOR = 0.3
+TREE_SPEED_FACTOR = 0.5
+
+# Name input
+MAX_NAME_LENGTH = 15

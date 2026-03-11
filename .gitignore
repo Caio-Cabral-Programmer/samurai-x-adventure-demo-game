@@ -175,4 +175,7 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
 
+# Game database (local scores)
+samurai_scores.db
+
 .github/
