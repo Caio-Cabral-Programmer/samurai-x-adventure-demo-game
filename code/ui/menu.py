@@ -9,7 +9,6 @@ from ..core.config import (
     WHITE,
     GOLD,
     GRAY,
-    BLACK,
     OBSTACLE_SCORE,
     BIRD_SCORE,
 )
