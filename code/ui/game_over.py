@@ -2,7 +2,14 @@
 
 import pygame
 
-from ..core.config import SCREEN_WIDTH, SCREEN_HEIGHT, WHITE, GOLD, GRAY
+from ..core.config import (
+    SCREEN_WIDTH,
+    SCREEN_HEIGHT,
+    WHITE,
+    GOLD,
+    GRAY,
+    CREATED_BY_TEXT,
+)
 
 
 class GameOverRenderer:
@@ -47,4 +54,10 @@ class GameOverRenderer:
         )
         surface.blit(
             menu, (SCREEN_WIDTH // 2 - menu.get_width() // 2, 200)
+        )
+
+        credit = self._font_small.render(CREATED_BY_TEXT, True, GRAY)
+        surface.blit(
+            credit,
+            (SCREEN_WIDTH // 2 - credit.get_width() // 2, 235),
         )

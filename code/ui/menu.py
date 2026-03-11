@@ -11,6 +11,7 @@ from ..core.config import (
     GRAY,
     OBSTACLE_SCORE,
     BIRD_SCORE,
+    CREATED_BY_TEXT,
 )
 
 
@@ -74,6 +75,12 @@ class MenuRenderer:
             text = self._font_small.render(line, True, GRAY)
             surface.blit(text, (SCREEN_WIDTH - 260, y))
             y += 18
+
+        credit = self._font_small.render(CREATED_BY_TEXT, True, GRAY)
+        surface.blit(
+            credit,
+            (SCREEN_WIDTH // 2 - credit.get_width() // 2, SCREEN_HEIGHT - 22),
+        )
 
     def render_name_select(
         self,

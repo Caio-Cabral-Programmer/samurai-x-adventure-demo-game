@@ -87,3 +87,6 @@ TREE_SPEED_FACTOR = 0.5
 
 # Name input
 MAX_NAME_LENGTH = 15
+
+# Credits
+CREATED_BY_TEXT = "by Caio Cabral - Recife-PE - BRAZIL - March 11, 2026"
