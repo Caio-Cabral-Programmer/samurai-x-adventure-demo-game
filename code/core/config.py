@@ -11,7 +11,7 @@ DB_PATH = ROOT_DIR / "samurai_scores.db"
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 300
 FPS = 60
-GAME_TITLE = "Samurai X Adventure"
+GAME_TITLE = "Samurai X"
 
 # Colors
 SKY_BLUE = (36, 159, 222)

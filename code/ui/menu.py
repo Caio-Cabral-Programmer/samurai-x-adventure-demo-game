@@ -39,7 +39,7 @@ class MenuRenderer:
         surface.blit(self._overlay, (0, 0))
 
         # Title
-        title = self._font_title.render("Samurai X Adventure", True, GOLD)
+        title = self._font_title.render("Samurai X", True, GOLD)
         surface.blit(title, (SCREEN_WIDTH // 2 - title.get_width() // 2, 18))
 
         # Menu options
